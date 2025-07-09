@@ -1,0 +1,12 @@
+def calculaTempo(distancia, velocidadeMedia):
+     return distancia / velocidadeMedia 
+
+distancia = float(input("Digite a distancia: "))
+velocidadeMedia = float(input("Digite a velocidade: "))
+
+tempoViagem = calculaTempo(distancia, velocidadeMedia)
+horas = int(tempoViagem)
+minutos = int((tempoViagem - horas) * 60)
+segundos = int((((tempoViagem - horas) * 60) - minutos) * 60)
+
+print("O Tempo de chegada foi de ", horas,":", minutos, ":", segundos)
