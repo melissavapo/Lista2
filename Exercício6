@@ -1,1 +1,9 @@
+def calcular_dias_perdidos(qtd_cigarros_dia, anos):
+dias_perdidos = (qtd_cigarros_dia * anos * 365 * 10) / 1440
+   return round(dias_perdidos, 2)
 
+qtd_cigarros_dia = int(input("Quantos cigarros você fuma por dia? "))
+anos = int(input("Há quantos anos você fuma? "))
+
+dias = calcular_dias_perdidos(qtd_cigarros_dia, anos)
+print("Você perdeu aproximadamente (dias) dias de vida devido ao tabagismo.")
