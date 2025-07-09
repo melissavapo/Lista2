@@ -1,1 +1,11 @@
+def calculaAumento(salarioAtual, porcentagemAumento):
+    return salarioAtual * (porcentagemAumento / 100)
 
+salarioAtual = float(input("Digite seu salário atual: "))
+porcentagemAumento = float(input("Digite a porcentagem de aumento: "))
+
+aumento = calculaAumento(salarioAtual, porcentagemAumento)
+novoSalario = salarioAtual + aumento
+
+print("O aumento foi de: ", aumento)
+print("O novo salário é: ", novoSalario)
