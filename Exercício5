@@ -1,1 +1,9 @@
+def calculaPreco(kmPercorrido, quantidadeDias):
+    return (kmPercorrido * 0.15) + (quantidadeDias * 60)
 
+kmPercorrido = float(input("Digitei os quilômetros percorridos: "))
+quantidadeDias = int(input("Digite quantos dias o carro foi alugado: "))
+
+total = calculaPreco(kmPercorrido, quantidadeDias)
+
+print("O valor total a pagar será: R$", total)
